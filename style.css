@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    height: 750px;
+    margin: 0 auto;
+    padding: 0 90px;
+    background: #FF6347 url('img/bg-intro-desktop\ \(1\).png');
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-area: 'intro' 'trial'
+                      'showcase-form card'
+                      ;
+    gap: 10px;
+}
+ .card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 80px 20px;
+
+ }
+ .showcase-form {
+  position: relative;
+  top: 60px;
+  height: 420px;
+  padding: 40px;
+ 
+ }
+ .showcase-form .form-control {
+  margin: 30px 0;
+  width: 75px;
+ }
+ .showcase-form .form-control input {
+  padding: 8px;
+  width: 305px;
+  border-radius: 5px;
+ }
+span {
+  color: red;
+}
+.btn-primary {
+  background-color: #50c878;
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 80px;
+  color: #fff;
+}
+.trial-button {
+  padding: 12px 70px;
+  border-radius: 8px;
+  background-color: navy;
+  color: white;
+  
+}
+@media(max-width:1100px) {
+  .card {
+    width:95%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width:350px) {
+  .card{
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+  }
+  .trial-button{
+    padding: 4px 32px;
+  }
+}
